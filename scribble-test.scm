@@ -1,4 +1,4 @@
-  (import (scheme base) (scheme write) (scribble) (cyclone string) (cyclone test))
+  (import (scheme base) (scheme write) (cyclone scribble) (cyclone string) (cyclone test))
 
     (define (test-scribble expect str)
       (test (call-with-output-string (lambda (out) (write str out)))
